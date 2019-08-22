@@ -235,6 +235,7 @@ namespace AutoUpdaterDotNET
             try
             {
                 Process.Start(processStartInfo);
+                Environment.Exit(0);
             }
             catch (Win32Exception exception)
             {

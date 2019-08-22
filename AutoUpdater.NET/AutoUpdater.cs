@@ -170,7 +170,10 @@ namespace AutoUpdaterDotNET
         ///     Set this to any of the available modes to change behaviour of the Mandatory flag.
         /// </summary>
         public static Mode UpdateMode;
-
+        /// <summary>
+        /// 允许取消关闭事件
+        /// </summary>
+        public static bool AllowCancle=true;
         /// <summary>
         ///     Set Proxy server to use for all the web requests in AutoUpdater.NET.
         /// </summary>

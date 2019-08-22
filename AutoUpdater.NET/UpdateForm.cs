@@ -193,5 +193,12 @@ namespace AutoUpdaterDotNET
         {
             AutoUpdater.Running = false;
         }
+
+        private void UpdateForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!AutoUpdater.AllowCancle && AutoUpdater.UpdateMode != Mode.Normal) {
+                e.Cancel = !AutoUpdater.AllowCancle;
+            }
+        }
     }
 }
